@@ -10,16 +10,16 @@ header{
 header h2{
   margin: 15px 20px;
 }
+
 .auth a{
   font-weight: 600;
   font-size: 1rem;
 }
 .auth{
-  right:0;
-  left:0;
+
   display: flex;
-  justify-content: right;
-  margin: 5px 30px;
+  justify-content: space-between;
+  margin: 5px 10px;
 }
 .new{
   margin: 30px 50px;

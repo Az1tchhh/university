@@ -1,1 +1,25 @@
-<p>main-page works!</p>
+<div class = "container">
+  <div class = "auth box-row">
+    <a (click)="logout()">Log Out</a>
+  </div>
+
+  <header>
+    <h2>Home</h2>
+  </header>
+  <div class = "asd">
+  <div class = "home_container box-column">
+    <div class = "notification">
+
+    </div>
+    <div class = "body box-column grid-container">
+      <h4 [routerLink] = "['/news']">News</h4>
+      <h4>Grades</h4>
+      <h4>Schedule</h4>
+      <h4>Teachers</h4>
+      <h4>Courses Taken</h4>
+      <h4>Transcript</h4>
+      <h4>Student Profile</h4>
+    </div>
+  </div>
+  </div>
+</div>

@@ -7,7 +7,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RouterModule } from "@angular/router";
 import { TestComponent } from './test/test.component';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { NewsPageComponent } from './news-page/news-page.component';
 
 @NgModule({
