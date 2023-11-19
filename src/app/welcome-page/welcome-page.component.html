@@ -5,9 +5,9 @@
     <div class="signup">
       <form>
         <label for="chk" aria-hidden="true">Login</label>
-        <input type="email" name="email" placeholder="Email" required="">
-        <input type="password" name="pswd" placeholder="Password" required="">
-        <button>Login</button>
+        <input type="email" name="email" placeholder="Email" required="" [(ngModel)]="userEmail">
+        <input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="userPassword">
+        <button (click)="authorise(this.userEmail, this.userPassword)">Login</button>
       </form>
     </div>
 

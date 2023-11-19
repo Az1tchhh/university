@@ -1,0 +1,42 @@
+.container{
+  font-family: monospace;
+  background-color: transparent;
+}
+header{
+  margin: 10px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+header h2{
+  margin: 15px 20px;
+}
+.auth a{
+  font-weight: 600;
+  font-size: 1rem;
+}
+.auth{
+  right:0;
+  left:0;
+  display: flex;
+  justify-content: right;
+  margin: 5px 30px;
+}
+.new{
+  margin: 30px 50px;
+}
+
+.nhd{
+  border-bottom: 1px solid lightgrey;
+}
+
+.date{
+  margin: 0;
+}
+.nhd h3{
+  margin: 5px 10px;
+  background-color: skyblue;
+}
+
+.content p{
+  margin:10px;
+}
