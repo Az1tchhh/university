@@ -1,0 +1,19 @@
+<div class = "container">
+  <div class = "auth box-row">
+    <a [routerLink] = "['/main']">Home</a>
+    <a (click)="logout()">Log Out</a>
+  </div>
+
+  <header>
+    <h2>Attendance</h2>
+  </header>
+  <p id="#status"></p>
+  <form id="attendanceForm">
+    <label for="message">Message:</label>
+    <input type="text" id="message" required>
+    <button type="button" onclick="markAttendance()">Mark Attendance</button>
+  </form>
+  <p>Attendance status:</p>
+  <p id="result"></p>
+
+</div>

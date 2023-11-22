@@ -10,3 +10,29 @@ body{
   display: flex;
   flex-direction: column;
 }
+.container{
+  font-family: monospace;
+  background-color: transparent;
+}
+header{
+  margin: 10px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+header h2{
+  margin: 15px 20px;
+}
+
+.auth a{
+  font-weight: 600;
+  font-size: 1rem;
+}
+.auth a:hover{
+  cursor: pointer;
+}
+.auth{
+
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}

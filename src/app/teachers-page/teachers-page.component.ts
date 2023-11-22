@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {AppComponent} from "../app.component";
 
 @Component({
-  selector: 'app-news-page',
-  templateUrl: './news-page.component.html',
-  styleUrls: ['./news-page.component.css']
+  selector: 'app-teachers-page',
+  templateUrl: './teachers-page.component.html',
+  styleUrls: ['./teachers-page.component.css']
 })
-export class NewsPageComponent implements OnInit{
+export class TeachersPageComponent implements OnInit{
 
   constructor(private router: Router) {
   }
@@ -17,10 +16,11 @@ export class NewsPageComponent implements OnInit{
       this.router.navigate(['']);
     }
   }
+
   logout(){
     localStorage.removeItem('token');
     window.alert("logged out");
-    window.location.href = '';
+    window.location.href = ''
   }
-    test = [1,2,3,4,5,6,7,8];
+
 }

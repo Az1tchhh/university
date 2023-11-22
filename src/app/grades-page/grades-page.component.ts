@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {AppComponent} from "../app.component";
 
 @Component({
-  selector: 'app-news-page',
-  templateUrl: './news-page.component.html',
-  styleUrls: ['./news-page.component.css']
+  selector: 'app-grades-page',
+  templateUrl: './grades-page.component.html',
+  styleUrls: ['./grades-page.component.css']
 })
-export class NewsPageComponent implements OnInit{
+export class GradesPageComponent implements OnInit{
 
   constructor(private router: Router) {
   }
@@ -22,5 +21,4 @@ export class NewsPageComponent implements OnInit{
     window.alert("logged out");
     window.location.href = '';
   }
-    test = [1,2,3,4,5,6,7,8];
 }

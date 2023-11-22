@@ -1,10 +1,17 @@
 <div class = "container">
   <div class = "auth box-row">
+    <ng-container *ngIf = "role != 'ADMIN'">
+      <a [routerLink] = "['/profile', 1]" style="margin-right: 20px">{{namee}}</a>
+    </ng-container>
+    <ng-container *ngIf = "role == 'ADMIN'">
+      <a style="margin-right: 20px; background-color: red">Admin - {{namee}}</a>
+    </ng-container>
     <a (click)="logout()">Log Out</a>
   </div>
 
   <header>
-    <h2>Home</h2>
+    <ng-container *ngIf ="role != 'ADMIN'"><h2>Home</h2></ng-container>
+    <ng-container *ngIf ="role == 'ADMIN'"><h2>Admin</h2></ng-container>
   </header>
   <div class = "asd">
   <div class = "home_container box-column">
@@ -12,13 +19,27 @@
 
     </div>
     <div class = "body box-column grid-container">
-      <h4 [routerLink] = "['/news']">News</h4>
-      <h4>Grades</h4>
-      <h4>Schedule</h4>
-      <h4>Teachers</h4>
-      <h4>Courses Taken</h4>
-      <h4>Transcript</h4>
-      <h4>Student Profile</h4>
+      <ng-container *ngIf="role == 'USER'">
+        <h4 [routerLink] = "['/news']">News</h4>
+        <h4 [routerLink] = "['/grades', 1]">Grades</h4>
+        <a href = "http://localhost:8080">Attendance</a>
+        <h4 [routerLink] = "['/schedule', 1]">Schedule</h4>
+        <h4 [routerLink] = "['/teachers', 1]">Teachers</h4>
+        <h4 [routerLink] = "['/courses', 1]">Courses Taken</h4>
+        <h4 [routerLink] = "['/transcript', 1]">Transcript</h4>
+        <h4 [routerLink] = "['/profile', 1]">Student Profile</h4>
+      </ng-container>
+      <ng-container *ngIf="role == 'ADMIN'">
+        <h4 [routerLink] = "['/mng/news']">Add News</h4>
+        <h4 [routerLink] = "['/mng/schedule']">Manage Schedule</h4>
+        <h4 [routerLink] = "['/mng/teachers']">Manage Professors</h4>
+        <h4 [routerLink] = "['/mng/courses']">Manage Courses</h4>
+        <h4 [routerLink] = "['/mng/transcript']">See Transcripts</h4>
+        <h4 [routerLink] = "['/mng/students']">Manage Students</h4>
+      </ng-container>
+      <ng-container *ngIf="role == 'MANAGER'">
+        <h4 [routerLink] = "['/add/attendance']">Add Attendace</h4>
+      </ng-container>
     </div>
   </div>
   </div>

@@ -1,32 +1,9 @@
-.container{
-  font-family: monospace;
-  background-color: transparent;
-
-}
-header{
-  margin: 10px 0;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-header h2{
-  margin: 15px 20px;
-}
-
-.auth a{
-  font-weight: 600;
-  font-size: 1rem;
-}
 .auth{
   display: flex;
   justify-content: right;
   margin: 5px 10px;
 }
-a{
-  text-decoration: none;
-}
-a:hover{
-  cursor: pointer;
-}
+
 .notification{
   width:100%;
   margin: 10px 20px
@@ -47,6 +24,9 @@ a:hover{
 }
 .body h4{
   margin: 5px 0;
+}
+.body h4:hover{
+  cursor: pointer;
 }
 .grid-container {
   display: grid;
